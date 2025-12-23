@@ -4,28 +4,37 @@
   <title>SuperDogz World</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
     body {
       margin: 0;
       height: 200vh;
       display: flex;
+      flex-direction: column;
       background: linear-gradient(135deg, #f1e3ab, #f0a13b);
-      justify-content: flex-start;
-      align-items: flex-start;
     }
 
     .heading {
       width: 100vw;
-      padding-bottom: 200px;
+      margin-bottom: 200px;
       text-align: center;
       color: #cfb72c;
       
       font-family: "Fredoka", sans-serif;
     }
 
-    h1 {
+    #title {
       font-size: 105px;
       margin-bottom: 0px;
       margin-top: 100px;
+      text-shadow: 0px 10px 8px rgba(162, 145, 93, 0.3);
     }
 
     p {
@@ -35,6 +44,29 @@
       color: #736d4e;
     }
 
+    #game-title {
+      animation: fadeIn 4.5s ease forwards;
+      width: 100vw;
+      font-size: 60px;
+      text-align: center;
+      margin-top: 0px;
+      color: #000000;
+      
+      font-family: "Fredoka", sans-serif;
+    }
+
+    .box-1 {
+      animation: fadeIn 1.5s ease forwards;
+      width: 90vw;
+      height: 500px;
+      background-color: #f2e4bb;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
   </style>
 </head>
 <body>
@@ -42,6 +74,11 @@
   <div class="heading">
     <h1 id="title">SuperDogz World</h1>
     <p>(or website)</p>
+  </div>
+  <div class="games">
+    <div class="box-1">
+      <h2 id="game-title">Games</h2>
+    </div>
   </div>
 
 </body>
