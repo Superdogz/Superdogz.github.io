@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>SuperDogz World</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
@@ -18,12 +18,13 @@
       height: 200vh;
       display: flex;
       flex-direction: column;
+      align-items: center;
       background: linear-gradient(135deg, #f1e3ab, #f0a13b);
     }
 
     .heading {
       width: 100vw;
-      margin-bottom: 200px;
+      margin-bottom: 100px;
       text-align: center;
       color: #cfb72c;
       
@@ -31,41 +32,91 @@
     }
 
     #title {
-      font-size: 105px;
-      margin-bottom: 0px;
-      margin-top: 100px;
-      text-shadow: 0px 10px 8px rgba(162, 145, 93, 0.3);
+      animation: fadeIn 5s ease forwards;  
+      width: 100%;
+      font-size: 100px;
+      text-align: center;
+      color: #000000;
+      font-family: "Fredoka", sans-serif;
+    }
+
+    h2 {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      animation: fadeIn 5s ease forwards;  
+      width: 100%;
+      font-size: 60px;
+      text-align: center;
+      color: #000000;
+      font-family: "Fredoka", sans-serif;
     }
 
     p {
       font-size: 25px;
-      margin-bottom: 20px;
-      margin-top: 20px;
       color: #736d4e;
-    }
-
-    #game-title {
-      animation: fadeIn 4.5s ease forwards;
-      width: 100vw;
-      font-size: 60px;
-      text-align: center;
-      margin-top: 0px;
-      color: #000000;
-      
-      font-family: "Fredoka", sans-serif;
+      margin-top: -40px;
     }
 
     .box-1 {
-      animation: fadeIn 1.5s ease forwards;
+      border: solid;
+      border-width: 10px;
+      border-color: #bcd07c;
+      animation: fadeIn 1s ease forwards;
       width: 90vw;
-      height: 500px;
-      background-color: #f2e4bb;
+      height: 1000px;
+      background-color: #d7efa1;
       margin: 0 auto;
-      margin-bottom: 20px;
+      margin-bottom: 100px;
       border-radius: 20px;
-      box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 20px 20px 8px #cf9a39;
+    }
+    
+    .box-2 {
+      border: solid;
+      border-width: 10px;
+      border-color: #ceda4ea8;
+      animation: fadeIn 1s ease forwards;
+      width: 90vw;
+      height: 800px;
+      background-color: #f3f998;
+      margin: 0 auto;
+      margin-bottom: 100px;
+      border-radius: 20px;
+      box-shadow: 20px 20px 8px #cf9a39;
     }
 
+
+    .game-icons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 50px;
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+
+    .icon {
+      animation: fadeIn 1.5s ease forwards;  
+      width: 320px;
+      height: 200px;
+      border-style: solid;
+      border-color: #000000;
+      border-radius: 20px;
+      border-width: 5px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .icon img {
+      width: 100%;
+      height: 100%; 
+      scale: 1.1
+    }
+
+    .icon1:hover img{
+      transform: scale(1.2);
+      transition: transform 0.3s ease;
+    }
 
   </style>
 </head>
@@ -75,10 +126,28 @@
     <h1 id="title">SuperDogz World</h1>
     <p>(or website)</p>
   </div>
-  <div class="games">
-    <div class="box-1">
-      <h2 id="game-title">Games</h2>
-    </div>
-  </div>
 
+  <div class="projects">
+    <div class="box-1">
+      <h2>Games</h2>
+      <div class="game-icons">
+        <a class="icon" href="sliding-tiles">
+          <img id="img1" src="confused-monkey.jpeg" alt="Game Icon 1">
+        </a>
+      </div>
+    </div>  
+    <div class="box-2">
+      <h2>Visualizations</h2>
+      <div class="game-icons">
+        <a class="icon" href="sliding-tiles"> 
+          <img id="img1" src="confused-monkey.jpeg" alt="Game Icon 1">
+        </a>
+      </div>
+    </div>  
+  </div>
+  <!-- javascript -->
+  <script>
+
+  </script>
+ 
 </body>
